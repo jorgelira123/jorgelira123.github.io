@@ -1,58 +1,1004 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jorge Lira - Programmer CV</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Jorge Lira — Data Engineer</title>
+  <meta name="description" content="Mid-level Data Engineer focused on Google Cloud: BigQuery, Dataflow, Airflow, Dataproc and PySpark. Projects, client case studies and certifications." data-i18n-attr="content:meta.description">
+  <meta name="author" content="Jorge Lira">
+
+  <!-- Site URL (absolute): when the domain changes, replace it here, in sitemap.xml and robots.txt (see README) -->
+  <link rel="canonical" href="https://jorgelira123.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jorgelira123.github.io/">
+  <meta property="og:title" content="Jorge Lira — Data Engineer">
+  <meta property="og:description" content="Mid-level Data Engineer focused on Google Cloud: BigQuery, Dataflow, Airflow, Dataproc and PySpark.">
+  <meta property="og:image" content="https://jorgelira123.github.io/assets/jorge-lira.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=3">
+
+  <script>
+    // Apply saved theme before first paint; flag JS so reveal animations only hide content when JS runs
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jorge Lira",
+    "alternateName": "Jorge Torres-Homem Lira Filho",
+    "jobTitle": "Data Engineer",
+    "url": "https://jorgelira123.github.io/",
+    "image": "https://jorgelira123.github.io/assets/jorge-lira.jpg",
+    "address": { "@type": "PostalAddress", "addressLocality": "Maceió", "addressCountry": "BR" },
+    "sameAs": [
+      "https://www.linkedin.com/in/jorge-lira-dev",
+      "https://github.com/jorgelira123"
+    ]
+  }
+  </script>
 </head>
-<body>
-  <h1 align="center">Hi 👋, I'm Jorge Lira</h1>
-  <h3 align="center">A passionate Python Developer from Brazil</h3>
-  <img align='right' alt='coding' src="https://media.tenor.com/NOYF3f82b_gAAAAC/programmer.gif" width="400"/>
-  <p align="left"> <img src="https://komarev.com/ghpvc/?username=jorgelira123&label=Profile%20views&color=0e75b6&style=flat" alt="jorgelira123" /> </p>
+<body id="top">
+  <!-- Shared SVG defs for the architecture diagrams -->
+  <svg class="svg-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path class="arrow-head" d="M0,0 L10,5 L0,10 z"/>
+      </marker>
+    </defs>
+  </svg>
 
-  <ul>
-    <li><strong>🔭 I’m currently working on:</strong> JLira - Web Projects</li>
-    <li><strong>🌱 I’m currently learning:</strong> Python</li>
-    <li><strong>👯 I’m looking to collaborate on:</strong> Python Projects</li>
-    <li><strong>🤝 I’m studying at:</strong> <a href="https://ebaconline.com.br/full-stack-python">EBAC</a></li>
-    <li><strong>👨‍💻 All of my projects are available at:</strong> Underdevelpoment</li>
-    <li><strong>📫 How to reach me:</strong> jorgelira542502@gmail.com</li>
-    <li><strong>⚡ Fun fact:</strong> I think I'm very curious!</li>
-  </ul>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
-  <h3 align="left">Connect with me:</h3>
-  <p align="left">
-    <a href="https://linkedin.com/in/https://www.linkedin.com/in/jorge-lira-9a5954b4/" target="blank">
-      <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/jorge-lira-9a5954b4/" height="30" width="40" />
-    </a>
-  </p>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><span class="brand-mark">JL</span><span>Jorge Lira</span></a>
 
-  <h2>🛠 Skills</h2>
-  <p>
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-    <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)" alt="NodeJs">
-    <img src="https://img.shields.io/badge/HTML5-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-    <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-    <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery">
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-    <img src="https://img.shields.io/badge/GULP-%23CF4647.svg?style=for-the-badge&logo=gulp&logoColor=white" alt="Gulp">
-    <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="Sass">
-    <img src="https://img.shields.io/badge/Microsoft_SQL_Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white" alt="SQL">
-    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-    <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
-  </p>
+      <nav class="nav" id="site-nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#certifications" data-i18n="nav.certifications">Certifications</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
 
-  <p>
-    <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgelira123&show_icons=true&locale=en&layout=compact" alt="jorgelira123" />
-  </p>
+      <div class="header-actions">
+        <button type="button" class="icon-btn lang-toggle" id="lang-toggle" aria-label="Ver em português" data-i18n-attr="aria-label:nav.langAria" data-i18n="nav.langButton">PT</button>
+        <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" data-i18n-attr="aria-label:nav.themeAria">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M1.5 12h3M19.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        </button>
+        <button type="button" class="icon-btn nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-attr="aria-label:nav.menuAria">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-  <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=jorgelira123&show_icons=true&locale=en" alt="jorgelira123" /></p>
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
 
-  <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=jorgelira123" alt="jorgelira123" /></p>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="status-pill"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n="hero.status">Google Cloud Professional Data Engineer &amp; Cloud Architect</span></p>
+          <p class="greeting"><span class="wave" aria-hidden="true">👋</span> <span data-i18n="hero.greeting">Hi, I'm</span></p>
+          <h1>Jorge Lira</h1>
+          <p class="hero-role" data-i18n="hero.role">Mid-level Data Engineer · Maceió, Brazil — Remote</p>
+          <p class="hero-lead" data-i18n="hero.lead">I build <span class="hl">reliable, cost-aware data pipelines</span> on Google Cloud, from ingestion to analytics-ready data in BigQuery.</p>
+          <p class="hero-sub" data-i18n="hero.sub">2.6 years of data engineering at Leega, a data consultancy, delivering GCP projects for enterprise clients. Before that, 3 years as a software developer.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/cv-en.pdf" target="_blank" rel="noopener" data-i18n-attr="href:cv.href">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              <span data-i18n="hero.cv">Download CV</span>
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/jorge-lira-dev" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/jorgelira123" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="assets/jorge-lira.jpg" width="600" height="600" alt="Portrait of Jorge Lira" data-i18n-attr="alt:hero.photoAlt">
+          </div>
+          <span class="chip chip-1" aria-hidden="true">BigQuery</span>
+          <span class="chip chip-2" aria-hidden="true">Airflow</span>
+          <span class="chip chip-3" aria-hidden="true">PySpark</span>
+          <span class="chip chip-4" aria-hidden="true">Dataflow</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="hero-facts">
+          <div><dt><span class="count" data-count="2.6" data-decimals="1">2.6</span></dt><dd data-i18n="hero.fact1">years in data engineering</dd></div>
+          <div><dt><span class="count" data-count="6">6</span></dt><dd data-i18n="hero.fact2">cloud &amp; data certifications</dd></div>
+          <div><dt><span class="count" data-count="449" data-suffix="M">449M</span></dt><dd data-i18n="hero.fact3">records migrated to GCP</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">~/experience</p>
+          <h2 data-i18n="exp.title">Experience</h2>
+          <p data-i18n="exp.intro">Client engagements at a data consultancy. Client names and code are confidential, so each case covers the problem, the approach and the outcome.</p>
+        </header>
+
+        <div class="role reveal">
+          <h3 class="role-title" data-i18n="exp.roleTitle">Data Engineer · Leega</h3>
+          <p class="role-meta" data-i18n="exp.roleMeta">May 2024 – present · Remote · Data consultancy: data engineering and architecture on GCP for enterprise clients</p>
+        </div>
+
+        <!-- ERP integration -->
+        <article class="card case reveal">
+          <header class="card-head">
+            <div>
+              <p class="case-client" data-i18n="erp.client">ERP software · 2026 – present</p>
+              <h3 data-i18n="erp.title">ERP data integration and pipeline operations</h3>
+            </div>
+          </header>
+          <ul class="metrics">
+            <li><strong>150+</strong> <span data-i18n="erp.m1">tables</span></li>
+            <li><strong>8</strong> <span data-i18n="erp.m2">tenants</span></li>
+            <li><strong data-i18n="erp.m3v">Tens of millions</strong> <span data-i18n="erp.m3">of records affected by the failure</span></li>
+          </ul>
+          <div class="case-body">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="erp.problem">Records deleted in the ERP (Oracle) stayed active in BigQuery — a critical replication failure that affected accounting figures.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.solution">Solution</h4>
+              <p data-i18n="erp.solution">As the sole technical owner of the integration, traced the root cause to a trigger condition that blocked the capture of logical deletes, and defined a business-key deduplication standard that handles re-ingestions, replacing a criterion that produced duplicates.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.result">Result</h4>
+              <p data-i18n="erp.result">Failure diagnosed and resolved, with an estimated impact of tens of millions of records, and re-ingestions made safe across 150+ tables in 8 tenants.</p>
+            </div>
+          </div>
+          <ul class="checklist case-extra">
+            <li data-i18n="erp.x1">Operate and evolve the ingestion pipelines: view modeling, deduplication of versioned records and analytical queries for reporting</li>
+            <li data-i18n="erp.x2">Optimized BigQuery queries, significantly reducing data processed per run through filter tuning, partitioning and column selection</li>
+            <li data-i18n="erp.x3">Technical interface with the ERP, database and connector teams; support for client analysts on queries and the data model</li>
+          </ul>
+          <figure class="diagram diagram-sm">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 625 165" role="img" aria-label="ERP on Oracle replicated through trigger-based capture into the client's data platform on BigQuery. Logical deletes were not captured; a business-key deduplication standard handles re-ingestions." data-i18n-attr="aria-label:d.erp.aria">
+                <rect class="node" x="10" y="40" width="150" height="64" rx="8"/>
+                <text class="c t-strong" x="85" y="68">ERP</text>
+                <text class="c t-sub" x="85" y="86">Oracle</text>
+
+                <rect class="node" x="210" y="40" width="170" height="64" rx="8"/>
+                <text class="c t-strong" x="295" y="77" data-i18n="d.erp.trigger">Trigger capture</text>
+
+                <rect class="node-accent" x="440" y="40" width="160" height="64" rx="8"/>
+                <text class="c t-strong" x="520" y="68" data-i18n="d.erp.platform">Data platform</text>
+                <text class="c t-sub" x="520" y="86">BigQuery</text>
+
+                <path class="edge" d="M160,72 H208" marker-end="url(#arrow)"/>
+                <path class="edge" d="M380,72 H438" marker-end="url(#arrow)"/>
+
+                <path class="edge-dash" d="M295,104 V122"/>
+                <rect class="alert" x="180" y="122" width="230" height="30" rx="15"/>
+                <text class="c t-alert" x="295" y="141" data-i18n="d.erp.alert">logical deletes not captured</text>
+
+                <path class="edge-dash" d="M520,104 V122"/>
+                <rect class="ok" x="425" y="122" width="190" height="30" rx="15"/>
+                <text class="c t-ok" x="520" y="141" data-i18n="d.erp.ok">business-key dedup</text>
+              </svg>
+            </div>
+          </figure>
+        </article>
+
+        <!-- FinOps -->
+        <article class="card case reveal">
+          <header class="card-head">
+            <div>
+              <p class="case-client" data-i18n="finops.client">Retail · 2026</p>
+              <h3 data-i18n="finops.title">BigQuery FinOps and query optimization</h3>
+            </div>
+          </header>
+          <ul class="metrics">
+            <li><strong>90%+</strong> <span data-i18n="finops.m1">less time and data processed</span></li>
+            <li><strong>~83%</strong> <span data-i18n="finops.m2">lower monthly cost on mapped routines</span></li>
+            <li><strong data-i18n="finops.m3v">~US$ 112.4k</strong> <span data-i18n="finops.m3">projected yearly savings</span></li>
+          </ul>
+          <div class="case-body">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="finops.problem">High BigQuery costs: the largest offenders in slot consumption and data volume had to be found and fixed.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.solution">Solution</h4>
+              <p data-i18n="finops.solution">Led the technical mapping and diagnosis in a team of 4 engineers, then refactored the critical queries applying SQL and data architecture best practices.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.result">Result</h4>
+              <p data-i18n="finops.result">90%+ gains in execution time and data processed, ~83% lower monthly cost for the mapped routines and ~US$ 112.4k/year in projected savings.</p>
+            </div>
+          </div>
+          <figure class="diagram diagram-sm">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 640 124" role="img" aria-label="Mapped BigQuery routines, FinOps diagnosis by a team of 4, query refactoring, about 83% lower monthly cost." data-i18n-attr="aria-label:d.finops.aria">
+                <rect class="node" x="10" y="30" width="140" height="64" rx="8"/>
+                <text class="c t-strong" x="80" y="58">BigQuery</text>
+                <text class="c t-sub" x="80" y="76" data-i18n="d.finops.routines">slots · data volume</text>
+
+                <rect class="node-accent" x="180" y="30" width="140" height="64" rx="8"/>
+                <text class="c t-strong" x="250" y="58">FinOps</text>
+                <text class="c t-sub" x="250" y="76" data-i18n="d.finops.diag">diagnosis · team of 4</text>
+
+                <rect class="node-accent" x="350" y="30" width="140" height="64" rx="8"/>
+                <text class="c t-strong" x="420" y="58" data-i18n="d.finops.refactor">Refactoring</text>
+                <text class="c t-sub" x="420" y="76">queries</text>
+
+                <rect class="ok" x="520" y="30" width="110" height="64" rx="8"/>
+                <text class="c t-ok t-big" x="575" y="60">~83%</text>
+                <text class="c t-sub" x="575" y="78" data-i18n="d.finops.cost">monthly cost</text>
+
+                <path class="edge" d="M150,62 H178" marker-end="url(#arrow)"/>
+                <path class="edge" d="M320,62 H348" marker-end="url(#arrow)"/>
+                <path class="edge" d="M490,62 H518" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+          </figure>
+        </article>
+
+        <!-- Assessments -->
+        <div class="engagements">
+          <article class="card engagement reveal">
+            <p class="case-client" data-i18n="assess1.client">Manufacturing · 2026</p>
+            <h3 data-i18n="assess1.title">Data assessment and modernization</h3>
+            <ul class="metrics metrics-sm">
+              <li><strong>9</strong> <span data-i18n="assess1.m1">business areas</span></li>
+              <li><strong>~12</strong> <span data-i18n="assess1.m2">PoCs delivered</span></li>
+            </ul>
+            <ul class="checklist">
+              <li data-i18n="assess1.x1">Led 6 of the 9 areas, from discovery meetings to each area's requirements</li>
+              <li data-i18n="assess1.x2">Technical lead alongside the business specialist; mentored a junior engineer</li>
+              <li data-i18n="assess1.x3">Mapped the as-is model and defined the to-be model and ROI with the project manager and coordinator; about 2 PoCs per area for technical validation</li>
+            </ul>
+          </article>
+
+          <article class="card engagement reveal">
+            <p class="case-client" data-i18n="assess2.client">Manufacturing · 2025</p>
+            <h3 data-i18n="assess2.title">Data assessment and modernization</h3>
+            <ul class="metrics metrics-sm">
+              <li><strong>12</strong> <span data-i18n="assess2.m1">business areas</span></li>
+              <li><strong>3</strong> <span data-i18n="assess2.m2">areas fully mapped</span></li>
+            </ul>
+            <ul class="checklist">
+              <li data-i18n="assess2.x1">Data assessment across 12 business areas, with full process mapping of 3 of them</li>
+              <li data-i18n="assess2.x2">Proposed data architecture improvements on GCP</li>
+              <li data-i18n="assess2.x3">Supported the modernization strategy with the client's technical team and stakeholders</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Migration -->
+        <article class="card case reveal">
+          <header class="card-head">
+            <div>
+              <p class="case-client" data-i18n="migr.client">Telecom · 2025</p>
+              <h3 data-i18n="migr.title">Teradata and Oracle migration to GCP</h3>
+            </div>
+          </header>
+          <ul class="metrics">
+            <li><strong>449M</strong> <span data-i18n="migr.m1">records migrated</span></li>
+            <li><strong>24h → 12h</strong> <span data-i18n="migr.m2">load window</span></li>
+          </ul>
+          <div class="case-body">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="migr.problem">Move 449 million records from Teradata and Oracle to Google Cloud.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.solution">Solution</h4>
+              <p data-i18n="migr.solution">Python DAGs in Apache Airflow for orchestration, processing on Dataflow and final load into BigQuery, plus Cloud Logging and a log sink for monitoring and delivering logs to the client.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.result">Result</h4>
+              <p data-i18n="migr.result">The load window dropped from 24 hours to 12 hours.</p>
+            </div>
+          </div>
+          <figure class="diagram diagram-sm">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 640 180" role="img" aria-label="Teradata and Oracle migrated through Dataflow into BigQuery, orchestrated by Airflow: 449 million records, load window from 24 to 12 hours." data-i18n-attr="aria-label:d.migr.aria">
+                <rect class="node" x="150" y="10" width="330" height="34" rx="8"/>
+                <text class="c t-strong" x="315" y="32">Airflow · Cloud Logging</text>
+
+                <rect class="node" x="10" y="64" width="120" height="44" rx="8"/>
+                <text class="c t-strong" x="70" y="91">Teradata</text>
+                <rect class="node" x="10" y="124" width="120" height="44" rx="8"/>
+                <text class="c t-strong" x="70" y="151">Oracle</text>
+
+                <rect class="node-accent" x="180" y="84" width="130" height="64" rx="8"/>
+                <text class="c t-strong" x="245" y="121">Dataflow</text>
+
+                <rect class="node-accent" x="360" y="84" width="120" height="64" rx="8"/>
+                <text class="c t-strong" x="420" y="121">BigQuery</text>
+
+                <rect class="ok" x="520" y="84" width="110" height="64" rx="8"/>
+                <text class="c t-ok t-big" x="575" y="111">449M</text>
+                <text class="c t-sub" x="575" y="130">24h → 12h</text>
+
+                <path class="edge" d="M130,86 H152 V106 H178" marker-end="url(#arrow)"/>
+                <path class="edge" d="M130,146 H152 V126 H178" marker-end="url(#arrow)"/>
+                <path class="edge" d="M310,116 H358" marker-end="url(#arrow)"/>
+                <path class="edge-dash" d="M480,116 H518" marker-end="url(#arrow)"/>
+                <path class="edge-dash" d="M245,44 V82" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+          </figure>
+        </article>
+
+        <!-- RAG PoC -->
+        <article class="card case reveal">
+          <header class="card-head">
+            <div>
+              <p class="case-client" data-i18n="rag.client">Internal · 2025</p>
+              <h3 data-i18n="rag.title">RAG chatbot for résumé analysis</h3>
+            </div>
+            <span class="badge" data-i18n="status.poc">Proof of concept</span>
+          </header>
+          <div class="case-body">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="rag.problem">Screen candidates by asking questions about résumés in natural language.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.solution">Solution</h4>
+              <p data-i18n="rag.solution">RAG architecture with Vertex AI, Gemini models and Cloud Storage for document-grounded answers, extracting and structuring skills and experience from the résumés.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.result">Result</h4>
+              <p data-i18n="rag.result">Technical feasibility validated for candidate screening.</p>
+            </div>
+          </div>
+          <figure class="diagram diagram-sm">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 640 160" role="img" aria-label="RAG proof of concept: a user asks questions to Gemini on Vertex AI, which uses résumés stored in Cloud Storage as context." data-i18n-attr="aria-label:d.rag.aria">
+                <rect class="node" x="10" y="55" width="110" height="60" rx="8"/>
+                <text class="c t-strong" x="65" y="81" data-i18n="d.rag.user">User</text>
+                <text class="c t-sub" x="65" y="98" data-i18n="d.rag.userSub">questions</text>
+
+                <rect class="group" x="160" y="20" width="280" height="120" rx="10"/>
+                <text class="t-label" x="172" y="40">VERTEX AI</text>
+
+                <rect class="node-accent" x="230" y="55" width="140" height="60" rx="8"/>
+                <text class="c t-strong" x="300" y="81">Gemini</text>
+                <text class="c t-sub" x="300" y="98">RAG</text>
+
+                <rect class="node" x="480" y="55" width="150" height="60" rx="8"/>
+                <text class="c t-strong" x="555" y="81">Cloud Storage</text>
+                <text class="c t-sub" x="555" y="98" data-i18n="d.rag.cv">résumés</text>
+
+                <path class="edge" d="M122,85 H228" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <path class="edge" d="M480,85 H372" marker-end="url(#arrow)"/>
+                <text class="c t-sub" x="425" y="77" data-i18n="d.rag.context">context</text>
+              </svg>
+            </div>
+          </figure>
+        </article>
+
+        <!-- Earlier engagements -->
+        <div class="engagements">
+          <article class="card engagement reveal">
+            <p class="case-client" data-i18n="platform.client">ERP software · 2024 – 2025</p>
+            <h3 data-i18n="platform.title">Data platform engineering</h3>
+            <ul class="checklist">
+              <li data-i18n="platform.x1">Helped build Python connectors for Zendesk, Jira and Jira Service to standardize data ingestion</li>
+              <li data-i18n="platform.x2">Contributed to the Medallion architecture (Bronze/Silver/Gold) on the client's data platform, applying data lake, data warehouse and pipeline concepts</li>
+              <li data-i18n="platform.x3">Supported the team in defining the data architecture and automating platform processes</li>
+            </ul>
+          </article>
+
+          <article class="card engagement reveal">
+            <p class="case-client" data-i18n="bi.client">Pulp &amp; paper · 2024</p>
+            <h3 data-i18n="bi.title">Data analysis and BI modernization</h3>
+            <ul class="checklist">
+              <li data-i18n="bi.x1">Reviewed and adjusted database tables to improve structure and performance</li>
+              <li data-i18n="bi.x2">Migrated and modernized Power BI dashboards and business KPIs</li>
+              <li data-i18n="bi.x3">Supported data modeling and source validation to ensure data quality and consistency</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Before data engineering -->
+        <div class="role role-previous reveal">
+          <h3 class="role-title" data-i18n="exp.freeTitle">Full Stack Developer · Freelance</h3>
+          <p class="role-meta" data-i18n="exp.freeMeta">Aug 2023 – May 2024 · Maceió, Brazil</p>
+          <p class="role-desc" data-i18n="exp.freeDesc">Built applications and websites with Python/Django, Django REST Framework, React, Node.js and PostgreSQL, including front-end integration with APIs.</p>
+        </div>
+        <div class="role role-previous role-last reveal">
+          <h3 class="role-title" data-i18n="exp.in4Title">Full Stack Developer (Delphi) · Grupo In4</h3>
+          <p class="role-meta" data-i18n="exp.in4Meta">Aug 2021 – Jul 2023 · Maceió, Brazil</p>
+          <p class="role-desc" data-i18n="exp.in4Desc">Front-end and back-end development in Delphi for corporate systems in production, with ticket management and prioritization, version control (Git) and team collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">~/projects</p>
+          <h2 data-i18n="projects.title">Projects</h2>
+          <p data-i18n="projects.intro">Personal projects, from a finished data platform on GCP to what I'm building right now.</p>
+        </header>
+
+        <!-- Fuel Data Platform -->
+        <article class="card project reveal">
+          <header class="card-head">
+            <div>
+              <h3>Fuel Data Platform (ANP)</h3>
+              <p class="card-sub" data-i18n="fuel.sub">Medallion data platform on GCP for Brazil's public fuel data, published by the National Petroleum Agency (ANP).</p>
+            </div>
+            <span class="badge badge-done" data-i18n="status.done">Completed</span>
+          </header>
+
+          <figure class="diagram">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 78 800 236" role="img" aria-label="Fuel Data Platform architecture: ANP API to Dataflow, Cloud Storage Bronze, Silver and Gold layers processed by Dataproc, BigQuery and Looker Studio, orchestrated by Cloud Composer." data-i18n-attr="aria-label:d.fuel.aria">
+                <rect class="node" x="10" y="120" width="100" height="60" rx="8"/>
+                <text class="c t-strong" x="60" y="146">ANP</text>
+                <text class="c t-sub" x="60" y="163">API</text>
+
+                <rect class="node-accent" x="140" y="120" width="110" height="60" rx="8"/>
+                <text class="c t-strong" x="195" y="146">Dataflow</text>
+                <text class="c t-sub" x="195" y="163">Apache Beam</text>
+
+                <rect class="group" x="280" y="88" width="270" height="134" rx="10"/>
+                <text class="t-label" x="292" y="108">CLOUD STORAGE · PARQUET</text>
+
+                <rect class="bronze" x="292" y="122" width="66" height="56" rx="6"/>
+                <text class="c t-strong" x="325" y="146">Bronze</text>
+                <text class="c t-sub" x="325" y="163" data-i18n="d.fuel.bronze">raw</text>
+
+                <rect class="silver" x="380" y="122" width="66" height="56" rx="6"/>
+                <text class="c t-strong" x="413" y="146">Silver</text>
+                <text class="c t-sub" x="413" y="163" data-i18n="d.fuel.silver">cleaned</text>
+
+                <rect class="gold" x="468" y="122" width="66" height="56" rx="6"/>
+                <text class="c t-strong" x="501" y="146">Gold</text>
+                <text class="c t-sub" x="501" y="163" data-i18n="d.fuel.gold">metrics</text>
+
+                <rect class="node-accent" x="350" y="250" width="130" height="52" rx="8"/>
+                <text class="c t-strong" x="415" y="272">Dataproc</text>
+                <text class="c t-sub" x="415" y="289" data-i18n="d.fuel.ephemeral">Spark · ephemeral</text>
+
+                <rect class="node-accent" x="578" y="117" width="110" height="66" rx="8"/>
+                <text class="c t-strong" x="633" y="141">BigQuery</text>
+                <text class="c t-sub" x="633" y="158" data-i18n="d.fuel.ext">external tables</text>
+                <text class="c t-sub" x="633" y="172" data-i18n="d.fuel.views">&amp; views</text>
+
+                <rect class="node" x="712" y="120" width="80" height="60" rx="8"/>
+                <text class="c t-strong" x="752" y="146">Looker</text>
+                <text class="c t-strong" x="752" y="162">Studio</text>
+
+                <rect class="node" x="40" y="250" width="180" height="52" rx="8"/>
+                <text class="c t-strong" x="130" y="272">Cloud Composer</text>
+                <text class="c t-sub" x="130" y="289">Airflow</text>
+
+                <path class="edge" d="M110,150 H138" marker-end="url(#arrow)"/>
+                <path class="edge" d="M250,150 H290" marker-end="url(#arrow)"/>
+                <path class="edge" d="M325,178 V266 H348" marker-end="url(#arrow)"/>
+                <path class="edge" d="M413,250 V180" marker-end="url(#arrow)"/>
+                <path class="edge" d="M480,276 H501 V180" marker-end="url(#arrow)"/>
+                <path class="edge" d="M534,150 H576" marker-end="url(#arrow)"/>
+                <path class="edge" d="M688,150 H710" marker-end="url(#arrow)"/>
+
+                <path class="edge-dash" d="M195,250 V182" marker-end="url(#arrow)"/>
+                <path class="edge-dash" d="M220,290 H348" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+            <figcaption data-i18n="fuel.caption">A Dataflow (Apache Beam) job pages through the ANP API and lands Parquet files in Cloud Storage (Bronze). Spark on Dataproc cleans and normalizes the data (Silver), and aggregated metrics are built on top (Gold): market share by distributor, capacity by state and the evolution of the station base. BigQuery exposes the layers through external tables and views for Looker Studio dashboards. Cloud Composer (Airflow) orchestrates the pipeline.</figcaption>
+          </figure>
+
+          <div class="card-grid">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="fuel.problem">Centralize Brazil's public fuel data with reliable ingestion, scalable processing and analytics-ready data, while keeping cost and quality under control.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.highlights">Highlights</h4>
+              <ul class="checklist">
+                <li data-i18n="fuel.h1">Hive-style partitioning (<code>uf</code>/<code>data_obtencao</code>) for partition pruning in BigQuery</li>
+                <li data-i18n="fuel.h2">Ephemeral Dataproc clusters to keep processing cost down</li>
+                <li data-i18n="fuel.h3">Isolated service accounts</li>
+                <li data-i18n="fuel.h4">Executive dashboard and a dashboard focused on Alagoas</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="card-foot">
+            <ul class="tags">
+              <li>Python</li><li>Apache Beam</li><li>PySpark</li><li>Dataproc</li><li>Cloud Storage</li><li>Cloud Composer</li><li>BigQuery</li><li>Looker Studio</li><li>Docker</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/jorgelira123/fuel-data-platform" target="_blank" rel="noopener" data-i18n="link.code">View code on GitHub</a>
+          </footer>
+        </article>
+
+        <!-- Clairemind -->
+        <article class="card project reveal">
+          <header class="card-head">
+            <div>
+              <h3 data-i18n="claire.title">Clairemind — personal AI assistant on WhatsApp</h3>
+              <p class="card-sub" data-i18n="claire.sub">Manages calendar, tasks, lists and reminders, understands voice messages and negotiates meetings with other people, all in natural language. Used daily in real life.</p>
+            </div>
+            <span class="badge badge-progress" data-i18n="status.progress">In progress</span>
+          </header>
+          <ul class="metrics">
+            <li><strong>~41%</strong> <span data-i18n="claire.m1">LLM cost saved with prompt caching</span></li>
+            <li><strong>5/5</strong> <span data-i18n="claire.m2">adversarial privacy and jailbreak tests passed</span></li>
+            <li><strong data-i18n="claire.m3v">Daily</strong> <span data-i18n="claire.m3">backups with validated restores</span></li>
+          </ul>
+
+          <figure class="diagram">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 800 255" role="img" aria-label="Clairemind architecture: WhatsApp messages go through Evolution API and an n8n webhook to a Node.js brain, which calls an LLM through fixed tools and writes to Google Calendar and SQLite, running in Docker Compose on a GCP VM." data-i18n-attr="aria-label:d.claire.aria">
+                <rect class="node" x="10" y="100" width="100" height="60" rx="8"/>
+                <text class="c t-strong" x="60" y="126">WhatsApp</text>
+                <text class="c t-sub" x="60" y="143" data-i18n="d.claire.user">text · voice</text>
+
+                <rect class="group" x="135" y="30" width="455" height="215" rx="10"/>
+                <text class="t-label" x="147" y="50">DOCKER COMPOSE · GCP VM</text>
+
+                <rect class="node" x="150" y="100" width="120" height="60" rx="8"/>
+                <text class="c t-strong" x="210" y="126">Evolution API</text>
+                <text class="c t-sub" x="210" y="143">Postgres · Redis</text>
+
+                <rect class="node" x="300" y="100" width="90" height="60" rx="8"/>
+                <text class="c t-strong" x="345" y="126">n8n</text>
+                <text class="c t-sub" x="345" y="143">webhook</text>
+
+                <rect class="node-accent" x="420" y="100" width="150" height="60" rx="8"/>
+                <text class="c t-strong" x="495" y="126" data-i18n="d.claire.brain">Brain · Node.js</text>
+                <text class="c t-sub" x="495" y="143" data-i18n="d.claire.ports">ports + state machines</text>
+
+                <rect class="node" x="420" y="190" width="150" height="40" rx="8"/>
+                <text class="c t-strong" x="495" y="215">SQLite</text>
+
+                <rect class="node" x="620" y="30" width="170" height="56" rx="8"/>
+                <text class="c t-strong" x="705" y="54">Claude Haiku 4.5</text>
+                <text class="c t-sub" x="705" y="71">tools · Whisper</text>
+
+                <rect class="node" x="620" y="150" width="170" height="56" rx="8"/>
+                <text class="c t-strong" x="705" y="174">Google Calendar</text>
+                <text class="c t-sub" x="705" y="191">OAuth2</text>
+
+                <path class="edge" d="M110,130 H148" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <path class="edge" d="M270,130 H298" marker-end="url(#arrow)"/>
+                <path class="edge" d="M390,130 H418" marker-end="url(#arrow)"/>
+                <path class="edge" d="M570,114 H595 V58 H618" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <path class="edge" d="M570,146 H595 V178 H618" marker-end="url(#arrow)"/>
+                <path class="edge" d="M495,160 V188" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+            <figcaption data-i18n="claire.caption">Messages (text or voice, transcribed with Whisper) arrive from WhatsApp through Evolution API and an n8n webhook to the Node.js brain. Claude can only act through fixed tools ("ports"): the code executes them, writes the confirmation text and routes the result to Google Calendar or SQLite.</figcaption>
+          </figure>
+
+          <div class="card-grid">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="claire.problem">LLM assistants tend to claim actions they never performed and to invent missing data — names, phone numbers, times. For a secretary that edits your calendar and writes to other people, that is unacceptable.</p>
+
+              <figure class="post-figure">
+                <a href="https://www.linkedin.com/posts/jorge-lira-dev_buildinpublic-ai-llm-share-7500667918729506817-a-YX/" target="_blank" rel="noopener"><img src="assets/clairemind-build-in-public.jpg" width="1280" height="1078" loading="lazy" alt="LinkedIn build-in-public post: &quot;Don't ask the AI not to fail. Make the failure impossible.&quot; A prompt only reduces the chance of the error; the architecture removes the possibility." data-i18n-attr="alt:claire.postAlt"></a>
+                <figcaption data-i18n="claire.postCaption">From the build-in-public series on LinkedIn: "Don't ask the AI not to fail. Make the failure impossible."</figcaption>
+              </figure>
+            </div>
+            <div>
+              <h4 data-i18n="label.decisions">Engineering decisions</h4>
+              <ul class="checklist">
+                <li data-i18n="claire.h1"><strong>Harness over prompt:</strong> the model decides <em>what</em> to do; the code controls <em>how</em> it comes out. Confirmations and agenda dates are generated by code, so the assistant never states an action it didn't execute or a date it made up.</li>
+                <li data-i18n="claire.h2"><strong>Structural fixes beat prompt fixes:</strong> required schema fields pushed the model to guess missing data. Making them optional and letting the code pick the default fixed it; "don't invent" in the prompt didn't.</li>
+                <li data-i18n="claire.h3"><strong>The model labels, the code routes:</strong> one entry tool classifies task vs. appointment, and routing to SQLite or Google Calendar is deterministic.</li>
+                <li data-i18n="claire.h4"><strong>Safe by construction:</strong> messages to third parties only go to saved contacts, so an invented phone number can't be used.</li>
+                <li data-i18n="claire.h5"><strong>Concurrency:</strong> a race condition in third-party relays fixed with an atomic claim, validated with parallel requests.</li>
+                <li data-i18n="claire.h6">Async meeting negotiation as explicit state machines, recurring events as a single RRULE series, and multi-tenant isolation with encrypted OAuth2 refresh tokens.</li>
+              </ul>
+
+              <h4 class="h4-spaced" data-i18n="label.production">Running in production</h4>
+              <ul class="checklist">
+                <li data-i18n="claire.p1">GCP VM behind nginx with SSL and Cloudflare DNS; SSH only through IAP, with port 22 closed to the internet</li>
+                <li data-i18n="claire.p2">Daily SQLite and n8n backups to Cloud Storage with lifecycle rules; restores validated, including during a real incident</li>
+                <li data-i18n="claire.p3">API token, input validation, rate limits per IP and per client, and a daily cost cap</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="card-foot">
+            <ul class="tags">
+              <li>Node.js</li><li>Claude Haiku 4.5</li><li>Function calling</li><li>Whisper</li><li>Evolution API</li><li>n8n</li><li>Google Calendar API</li><li>SQLite</li><li>Docker Compose</li><li>GCP</li><li>Cloud Storage</li><li>nginx</li><li>Cloudflare</li>
+            </ul>
+            <span class="muted" data-i18n="link.private">Private repository</span>
+            <div class="post-links">
+              <span class="muted" data-i18n="claire.posts">Build log on LinkedIn:</span>
+              <a class="link-arrow" href="https://www.linkedin.com/posts/jorge-lira-dev_buildinpublic-ai-whatsapp-ugcPost-7475326708405919745-751G/" target="_blank" rel="noopener" data-i18n="claire.post1">Negotiating a meeting</a>
+              <a class="link-arrow" href="https://www.linkedin.com/posts/jorge-lira-dev_buildinpublic-ai-llm-share-7480378844613337088-jzGd/" target="_blank" rel="noopener" data-i18n="claire.post2">When the AI believes its own mistake</a>
+              <a class="link-arrow" href="https://www.linkedin.com/posts/jorge-lira-dev_buildinpublic-ai-llm-share-7500667918729506817-a-YX/" target="_blank" rel="noopener" data-i18n="claire.post3">Make the error impossible</a>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Lakehouse Factory -->
+        <article class="card project reveal">
+          <header class="card-head">
+            <div>
+              <h3>Lakehouse Factory</h3>
+              <p class="card-sub" data-i18n="lf.sub">An animated, interactive data pipeline drawn as a warehouse: events travel from an API through Bronze, Silver and Gold to the dashboard — and you can break it on purpose.</p>
+            </div>
+            <span class="badge" data-i18n="status.interactive">Interactive</span>
+          </header>
+
+          <figure class="diagram">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 30 800 205" role="img" aria-label="Simulated pipeline: orders-api publishes 2,400 events per second to Pub/Sub; Dataflow writes Bronze; dbt builds Silver; dbt tests gate Gold, which feeds Looker, Vertex AI and an API. Bad batches go to quarantine and are replayed." data-i18n-attr="aria-label:d.lf.aria">
+                <rect class="node" x="10" y="95" width="100" height="56" rx="8"/>
+                <text class="c t-strong" x="60" y="119">orders-api</text>
+                <text class="c t-sub" x="60" y="136" data-i18n="d.lf.rate">2,400 events/s</text>
+
+                <rect class="node" x="135" y="95" width="90" height="56" rx="8"/>
+                <text class="c t-strong" x="180" y="128">Pub/Sub</text>
+
+                <rect class="node-accent" x="250" y="95" width="100" height="56" rx="8"/>
+                <text class="c t-strong" x="300" y="119">Dataflow</text>
+                <text class="c t-sub" x="300" y="136" data-i18n="d.lf.scale">scales out</text>
+
+                <rect class="bronze" x="375" y="95" width="80" height="56" rx="6"/>
+                <text class="c t-strong" x="415" y="119">Bronze</text>
+                <text class="c t-sub" x="415" y="136" data-i18n="d.lf.raw">as received</text>
+
+                <rect class="silver" x="480" y="95" width="90" height="56" rx="6"/>
+                <text class="c t-strong" x="525" y="119">Silver</text>
+                <text class="c t-sub" x="525" y="136">dbt · dedup</text>
+
+                <rect class="gold" x="600" y="95" width="80" height="56" rx="6"/>
+                <text class="c t-strong" x="640" y="119">Gold</text>
+                <text class="c t-sub" x="640" y="136">dbt tests</text>
+
+                <rect class="node" x="705" y="40" width="85" height="40" rx="8"/>
+                <text class="c t-strong" x="747" y="65">Looker</text>
+                <rect class="node" x="705" y="103" width="85" height="40" rx="8"/>
+                <text class="c t-strong" x="747" y="128">Vertex AI</text>
+                <rect class="node" x="705" y="160" width="85" height="40" rx="8"/>
+                <text class="c t-strong" x="747" y="185">API</text>
+
+                <rect class="alert" x="115" y="185" width="260" height="36" rx="18"/>
+                <text class="c t-alert" x="245" y="208" data-i18n="d.lf.incident">incident: 6× volume, amount as text</text>
+
+                <rect class="alert" x="560" y="185" width="130" height="36" rx="18"/>
+                <text class="c t-alert" x="625" y="208" data-i18n="d.lf.quarantine">quarantine → replay</text>
+
+                <path class="edge" d="M110,123 H133" marker-end="url(#arrow)"/>
+                <path class="edge" d="M225,123 H248" marker-end="url(#arrow)"/>
+                <path class="edge" d="M350,123 H373" marker-end="url(#arrow)"/>
+                <path class="edge" d="M455,123 H478" marker-end="url(#arrow)"/>
+                <path class="edge" d="M570,123 H598" marker-end="url(#arrow)"/>
+                <path class="edge" d="M680,123 H692 V60 H703" marker-end="url(#arrow)"/>
+                <path class="edge" d="M680,123 H703" marker-end="url(#arrow)"/>
+                <path class="edge" d="M680,123 H692 V180 H703" marker-end="url(#arrow)"/>
+                <path class="edge-dash" d="M60,151 V203 H113" marker-end="url(#arrow)"/>
+                <path class="edge-dash" d="M525,151 V203 H558" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+            <figcaption data-i18n="lf.caption">A simulated pipeline at the scale of a large operation (about half a billion rows a day). Dataflow writes everything to Bronze as it arrives. In Silver, dbt removes duplicates (Pub/Sub can deliver the same message twice) and test orders, about 3% of rows. dbt tests decide what reaches Gold, which feeds Looker, Vertex AI and an API.</figcaption>
+          </figure>
+
+          <div class="card-grid">
+            <div>
+              <h4 data-i18n="label.problem">Problem</h4>
+              <p data-i18n="lf.problem">Many people use data every day without seeing the path it takes — or what happens to it when something breaks along the way.</p>
+            </div>
+            <div>
+              <h4 data-i18n="lf.incidentLabel">"Simulate incident"</h4>
+              <ul class="checklist">
+                <li data-i18n="lf.h1">A deploy sends 6× the volume and turns <code>amount</code> from a number into text</li>
+                <li data-i18n="lf.h2">The queue grows and Dataflow scales out</li>
+                <li data-i18n="lf.h3">Bad batches go to quarantine before Gold, and Looker flags that the data is incomplete</li>
+                <li data-i18n="lf.h4">Replay recovers everything with no batch lost</li>
+                <li data-i18n="lf.h5">A detail anyone who watches dashboards knows: the queue drains before the SLA turns green again, because late batches stay in the window for a while</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="card-foot">
+            <ul class="tags">
+              <li>JavaScript</li><li>Pub/Sub</li><li>Dataflow</li><li>dbt</li><li>Looker</li><li>Vertex AI</li>
+            </ul>
+            <span class="muted" data-i18n="lf.built">Plain JavaScript, built with Claude as pair programmer</span>
+            <div class="post-links">
+              <a class="btn btn-primary btn-sm" href="https://jorgelira123.github.io/lakehouse-factory-visual/" target="_blank" rel="noopener" data-i18n="lf.demo">Open the live demo</a>
+              <a class="link-arrow" href="https://github.com/jorgelira123/lakehouse-factory-visual" target="_blank" rel="noopener" data-i18n="link.code">View code on GitHub</a>
+              <a class="link-arrow" href="https://www.linkedin.com/posts/jorge-lira-dev_dataengineering-gcp-bigquery-ugcPost-7514323713740333056-lrs_/" target="_blank" rel="noopener" data-i18n="lf.link">Watch it on LinkedIn</a>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Currently building -->
+        <h3 class="subhead reveal" data-i18n="projects.building">Currently building</h3>
+
+        <article class="card project reveal">
+          <header class="card-head">
+            <div>
+              <h3 data-i18n="dbt.title">dbt project on BigQuery</h3>
+              <p class="card-sub" data-i18n="dbt.sub">Analytics engineering on BigQuery's public <code>thelook_ecommerce</code> dataset, built alongside the ALL-IN-ONE dbt Bootcamp.</p>
+            </div>
+            <span class="badge badge-progress" data-i18n="status.progress">In progress</span>
+          </header>
+
+          <figure class="diagram">
+            <div class="diagram-scroll">
+              <svg class="dg" viewBox="0 0 650 232" role="img" aria-label="Planned dbt project: thelook_ecommerce sources feed 4 staging, 2 intermediate and 4 mart models in BigQuery, plus an SCD2 snapshot, with dbt build running in GitHub Actions." data-i18n-attr="aria-label:d.dbt.aria">
+                <rect class="node" x="10" y="8" width="630" height="34" rx="8"/>
+                <text class="c t-strong" x="325" y="30">GitHub Actions · dbt build</text>
+                <path class="edge-dash" d="M325,42 V54" marker-end="url(#arrow)"/>
+
+                <rect class="group" x="10" y="56" width="630" height="166" rx="10"/>
+                <text class="t-label" x="24" y="76">BIGQUERY · DBT CORE 1.12</text>
+
+                <rect class="node" x="26" y="90" width="140" height="64" rx="8"/>
+                <text class="c t-strong" x="96" y="116">thelook_ecommerce</text>
+                <text class="c t-sub" x="96" y="134">sources · freshness</text>
+
+                <rect class="node-accent" x="196" y="90" width="120" height="64" rx="8"/>
+                <text class="c t-strong" x="256" y="116">staging</text>
+                <text class="c t-sub" x="256" y="134" data-i18n="d.dbt.stg">4 models</text>
+
+                <rect class="node-accent" x="346" y="90" width="130" height="64" rx="8"/>
+                <text class="c t-strong" x="411" y="116">intermediate</text>
+                <text class="c t-sub" x="411" y="134" data-i18n="d.dbt.int">2 models</text>
+
+                <rect class="node-accent" x="506" y="90" width="120" height="64" rx="8"/>
+                <text class="c t-strong" x="566" y="112">marts</text>
+                <text class="c t-sub" x="566" y="129" data-i18n="d.dbt.marts">4 models</text>
+                <text class="c t-sub" x="566" y="143" data-i18n="d.dbt.incr">1 incremental</text>
+
+                <rect class="node" x="196" y="174" width="120" height="36" rx="8"/>
+                <text class="c t-strong" x="256" y="197">snapshot · SCD2</text>
+
+                <rect class="ok" x="346" y="174" width="280" height="36" rx="18"/>
+                <text class="c t-ok" x="486" y="197" data-i18n="d.dbt.tests">data tests on every layer</text>
+
+                <path class="edge" d="M166,122 H194" marker-end="url(#arrow)"/>
+                <path class="edge" d="M316,122 H344" marker-end="url(#arrow)"/>
+                <path class="edge" d="M476,122 H504" marker-end="url(#arrow)"/>
+                <path class="edge" d="M96,154 V192 H194" marker-end="url(#arrow)"/>
+              </svg>
+            </div>
+            <figcaption data-i18n="dbt.caption">Planned structure, being built now: staging, intermediate and mart models with an incremental <code>fct_order_items</code>, a Type 2 snapshot for history, data tests and source freshness, and <code>dbt build</code> in CI.</figcaption>
+          </figure>
+
+          <div class="card-grid">
+            <div>
+              <h4 data-i18n="label.goal">Goal</h4>
+              <p data-i18n="dbt.goal">Practice analytics engineering end to end on realistic e-commerce data (users, orders, order items and products): layered models, tests, incremental loads, history tracking and CI.</p>
+            </div>
+            <div>
+              <h4 data-i18n="label.scope">Scope</h4>
+              <ul class="checklist">
+                <li data-i18n="dbt.h1">4 staging, 2 intermediate and 4 mart models</li>
+                <li data-i18n="dbt.h2">Incremental fact table (<code>fct_order_items</code>, MERGE) and an SCD Type 2 snapshot</li>
+                <li data-i18n="dbt.h3">Data tests and source freshness checks</li>
+                <li data-i18n="dbt.h4">Pinned dbt Core 1.12 with <code>dbt build</code> in GitHub Actions</li>
+              </ul>
+            </div>
+          </div>
+
+          <footer class="card-foot">
+            <ul class="tags">
+              <li>dbt Core</li><li>BigQuery</li><li>SQL</li><li>Jinja</li><li>GitHub Actions</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/jorgelira123/thelook-dbt" target="_blank" rel="noopener" data-i18n="link.code">View code on GitHub</a>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">~/skills</p>
+          <h2 data-i18n="skills.title">Skills</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Google Cloud</h3>
+            <ul class="tags">
+              <li>BigQuery</li><li>Dataflow / Apache Beam</li><li>Cloud Composer / Airflow</li><li>Cloud Storage</li><li>Dataproc</li><li>Cloud Logging</li><li>Vertex AI</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.platforms">Other platforms</h3>
+            <ul class="tags">
+              <li>Databricks</li><li>AWS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.lang">Languages &amp; processing</h3>
+            <ul class="tags">
+              <li>Python</li><li>SQL</li><li>PySpark</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Pipelines</h3>
+            <ul class="tags">
+              <li>Apache Airflow</li><li>Dataflow</li><li>ETL / ELT</li><li data-i18n="skills.erp">ERP data integration</li><li data-i18n="skills.api">API connectors (Zendesk, Jira)</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.data">Data modeling &amp; architecture</h3>
+            <ul class="tags">
+              <li data-i18n="skills.modeling">Relational &amp; dimensional modeling</li><li data-i18n="skills.medallion">Medallion architecture</li><li>Data Lake</li><li>Data Warehouse</li><li>Data Mart</li><li data-i18n="skills.quality">Data quality &amp; governance</li><li>FinOps</li><li>dbt <span class="tag-note" data-i18n="skills.learning">learning</span></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.ops">Operations</h3>
+            <ul class="tags">
+              <li data-i18n="skills.incident">Incident resolution</li><li data-i18n="skills.rca">Root cause analysis</li><li data-i18n="skills.monitoring">Monitoring &amp; logging</li><li data-i18n="skills.docs">Technical documentation</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>BI</h3>
+            <ul class="tags">
+              <li>Looker Studio</li><li>Power BI</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.ai">AI</h3>
+            <ul class="tags">
+              <li data-i18n="skills.rag">RAG (Vertex AI, Gemini)</li><li>LLM function calling</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 data-i18n="skills.tools">Tools</h3>
+            <ul class="tags">
+              <li>Git</li><li>Docker</li><li>Jupyter</li><li>Jira</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">~/certifications</p>
+          <h2 data-i18n="certs.title">Certifications</h2>
+        </header>
+        <ul class="cert-grid">
+          <li class="card cert cert-gcp reveal">
+            <span class="cert-issuer">Google Cloud</span>
+            <h3>Professional Cloud Architect</h3>
+            <span class="cert-year">2026</span>
+            <a class="link-arrow" href="assets/certificates/gcp-professional-cloud-architect.pdf" target="_blank" rel="noopener" data-i18n="certs.view">View certificate</a>
+          </li>
+          <li class="card cert cert-gcp reveal">
+            <span class="cert-issuer">Google Cloud</span>
+            <h3>Professional Data Engineer</h3>
+            <span class="cert-year">2025</span>
+            <a class="link-arrow" href="assets/certificates/gcp-professional-data-engineer.pdf" target="_blank" rel="noopener" data-i18n="certs.view">View certificate</a>
+          </li>
+          <li class="card cert cert-gcp reveal">
+            <span class="cert-issuer">Google Cloud</span>
+            <h3>Cloud Digital Leader</h3>
+            <span class="cert-year">2024</span>
+            <a class="link-arrow" href="assets/certificates/gcp-cloud-digital-leader.pdf" target="_blank" rel="noopener" data-i18n="certs.view">View certificate</a>
+          </li>
+          <li class="card cert cert-aws reveal">
+            <span class="cert-issuer">AWS</span>
+            <h3>Solutions Architect – Associate</h3>
+            <span class="cert-year">2026</span>
+            <a class="link-arrow" href="assets/certificates/aws-solutions-architect-associate.pdf" target="_blank" rel="noopener" data-i18n="certs.view">View certificate</a>
+          </li>
+          <li class="card cert cert-aws reveal">
+            <span class="cert-issuer">AWS</span>
+            <h3>Cloud Practitioner</h3>
+            <span class="cert-year">2023</span>
+            <a class="link-arrow" href="https://www.credly.com/badges/105ce0a9-228f-48a1-aa8d-34db216099b5/public_url" target="_blank" rel="noopener" data-i18n="certs.verify">Verify on Credly</a>
+          </li>
+          <li class="card cert cert-dbx reveal">
+            <span class="cert-issuer">Databricks</span>
+            <h3>Data Engineer Associate</h3>
+            <span class="cert-year">2025</span>
+            <a class="link-arrow" href="assets/certificates/databricks-data-engineer-associate.pdf" target="_blank" rel="noopener" data-i18n="certs.view">View certificate</a>
+          </li>
+          <li class="card cert cert-cisco reveal">
+            <span class="cert-issuer">Cisco</span>
+            <h3>Python Essentials 2</h3>
+            <span class="cert-year">2023</span>
+            <a class="link-arrow" href="https://www.credly.com/badges/eb9fc474-3983-4dee-b4f3-b71394a9636d/public_url" target="_blank" rel="noopener" data-i18n="certs.verify">Verify on Credly</a>
+          </li>
+          <li class="card cert cert-cisco reveal">
+            <span class="cert-issuer">Cisco</span>
+            <h3>CCNA: Introduction to Networks</h3>
+            <span class="cert-year">2023</span>
+            <a class="link-arrow" href="https://www.credly.com/badges/9a4fd0c0-4bee-42ec-a500-f4aa21b4bc22/public_url" target="_blank" rel="noopener" data-i18n="certs.verify">Verify on Credly</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-alt" id="about">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="kicker">~/about</p>
+          <h2 data-i18n="about.title">About</h2>
+        </header>
+        <div class="reveal">
+          <p data-i18n="about.p1">I'm a data engineer based in Maceió, Brazil, working remotely. I spent 3 years as a software developer (Python/Django, Delphi) before moving into data engineering, where I've spent the last 2.6 years at Leega building GCP solutions for enterprise clients.</p>
+          <p data-i18n="about.p2">Outside client work I keep building: a data platform for public fuel data, a WhatsApp AI assistant I use every day and an animated simulation that explains how a pipeline behaves during an incident. Right now I'm deepening my analytics engineering skills with a dbt project on BigQuery.</p>
+          <p data-i18n="about.p3">I hold a degree in Civil Engineering from Mackenzie Presbyterian University. Portuguese is my native language, and my English is advanced, used at work for reading, writing, meetings and technical documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container narrow">
+        <div class="contact-card reveal">
+          <p class="kicker">~/contact</p>
+          <h2 data-i18n="contact.title">Let's talk</h2>
+          <p data-i18n="contact.intro">Want to talk about data, pipelines or a project? The best way to reach me is by email or LinkedIn.</p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:jorgelira542502@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              jorgelira542502@gmail.com
+            </a>
+            <button type="button" class="btn copy-btn" id="copy-email" data-email="jorgelira542502@gmail.com">
+              <span class="copy-label" data-i18n="contact.copy">Copy e-mail</span>
+              <span class="copied-label" data-i18n="contact.copied">Copied!</span>
+            </button>
+          </div>
+
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/jorge-lira-dev" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/jorgelira123" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="assets/cv-en.pdf" target="_blank" rel="noopener">CV (English)</a></li>
+            <li><a href="assets/cv-pt.pdf" target="_blank" rel="noopener">CV (Português)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Jorge Lira</p>
+      <p data-i18n="footer.built">Hand-built with HTML, CSS and a little JavaScript. No frameworks.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js?v=3" defer></script>
+  <script src="js/main.js?v=3" defer></script>
 </body>
 </html>
