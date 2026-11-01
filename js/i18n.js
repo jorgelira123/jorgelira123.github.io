@@ -154,7 +154,7 @@ window.I18N_PT = {
   'exp.freeDesc': 'Desenvolvimento de aplicações e sites com Python/Django, Django REST Framework, React, Node.js e PostgreSQL, incluindo integração de front-end com APIs.',
   'exp.in4Title': 'Desenvolvedor Full Stack (Delphi) · Grupo In4',
   'exp.in4Meta': 'ago/2021 – jul/2023 · Maceió, Brasil',
-  'exp.in4Desc': 'Desenvolvimento front-end e back-end em Delphi para sistemas corporativos em produção, com gestão e priorização de tickets, versionamento (Git) e colaboração em equipe.',
+  'exp.in4Desc': 'Desenvolvimento front-end e back-end em Delphi para um ERP corporativo em produção sobre SQL Server, incluindo consultas para validar dados durante a manutenção; gestão e priorização de tickets, versionamento (Git) e colaboração em equipe.',
 
   'erp.client': 'Software ERP · 2026 – atual',
   'erp.title': 'Integração de dados de ERP e sustentação de pipelines',
