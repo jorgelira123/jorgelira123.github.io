@@ -28,7 +28,7 @@ window.I18N_PT = {
   'hero.photoAlt': 'Foto de Jorge Lira',
   'hero.fact1': 'anos em engenharia de dados',
   'hero.fact2': 'certificações cloud e dados',
-  'hero.fact3': 'registros migrados para GCP',
+  'hero.fact3': 'registros migrados para GCP com o time',
 
   'status.done': 'Concluído',
   'status.progress': 'Em andamento',
@@ -197,11 +197,11 @@ window.I18N_PT = {
 
   'migr.client': 'Telecom · 2025',
   'migr.title': 'Migração de Teradata e Oracle para o GCP',
-  'migr.m1': 'registros migrados',
+  'migr.m1': 'registros migrados pelo time',
   'migr.m2': 'janela de carga',
   'migr.problem': 'Migrar 449 milhões de registros de Teradata e Oracle para o Google Cloud.',
-  'migr.solution': 'DAGs em Python no Apache Airflow para orquestração, processamento no Dataflow e carga final no BigQuery, com Cloud Logging e LogSink para monitoramento e disponibilização de logs ao cliente.',
-  'migr.result': 'A janela de carga caiu de 24 horas para 12 horas.',
+  'migr.solution': 'Como parte do time de migração: DAGs em Python no Apache Airflow para orquestração, processamento no Dataflow e carga final no BigQuery, com Cloud Logging e LogSink para monitoramento e disponibilização de logs ao cliente.',
+  'migr.result': 'O projeto reduziu a janela de carga de 24 horas para 12 horas.',
 
   'rag.client': 'Interno · 2025',
   'rag.title': 'Chatbot RAG para análise de currículos',
